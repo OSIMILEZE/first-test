@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+
+
+nav{
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 5rem;
+}
+
+ nav h1{
+    color: #15193d;
+    font-size: 30px;
+    font-weight: 20px;
+}
+ nav button{  
+    all: unset;
+    padding: 10px 35px;
+    color: white;
+    background-color: #15193d;
+    border-radius: 40px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding:5rem;
+} 
+
+.top{
+    width: 35%;
+}
+
+main h1{
+    color: #212446;
+    font-size:25px;
+    font-weight:50px;
+    font-weight:900;
+}
+main p{
+    padding:1rem 0;
+    color:#60609e;
+    font-size:15px;
+    font-weight: 20px;
+}
+main img{
+    width:50%;
+}
+ main button{
+    all: unset;
+    padding: 10px 15px;
+    color: white;
+    background-color: #f84b7a;
+    border-radius: 40px;
+ }
+
+ section{
+    display:grid;
+    justify-content: space-between;
+    padding: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+ }
+
+ #down h1{
+    color: white;
+    background-color: #f84b7a;
+    border-radius:10px;
+    padding: 60px;
+    padding-top: 1rem;
+    box-shadow: 5px;
+ }
+ section div{
+  box-shadow:5px 5px 10px rgb(202, 200, 200);
+  border-radius: 5px;
+  padding: 3rem;
+ }
+ section button{
+     all: unset;
+    margin-top: 1rem;
+    color: #dd5f87;
+ }
+ section h2{
+    color: #171835;
+ }
+ section p{
+    color: #60609e;
+    font-size: 12px;
+}
+section i{
+    font-size: 40px;
+}
+
+
+ footer{
+    background-color: #13183e;
+    display: flex;
+    justify-content:space-between ;
+    padding: 10px 5rem;
+    align-items: center;
+ }
+
+ footer h1{
+    color: white;
+    font-size: 20px;
+ }
+
+footer button{
+    all: unset;
+    padding: 10px 35px;
+    justify-content: space-around;
+    background-color: #cc33b9;
+    border-radius:20px;
+    color: white;
+    box-shadow: #cc33b9;
+}
+
+@media screen and (max-width:768px){
+
+    main, footer, section, nav{
+        padding: 2rem;
+    }
+    
+    .top{
+        width:45%;
+    }
+
+    main p{
+        font-size: 11px;
+    }
+
+    #down h1{
+        padding: 30px;
+    }
+
+    section div{
+        padding: 3rem 1.5rem;
+    }
+    
+    section{
+        margin: 5rem 0 3rem;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        flex-direction: column;
+    }
+
+    .top{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    main img{
+        width: 100%;
+    }
+
+    section{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
